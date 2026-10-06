@@ -7,6 +7,7 @@ import { loadArticles } from './articles.js';
 import { loadActivities } from './activities.js';
 import { loadRelatedSections } from './related-section.js';
 import { loadMainNav } from './navbar.js';
+import { loadImageLibrary } from './image-library.js';
 
 loadWebsiteLinks();
 loadSponsors();
@@ -17,3 +18,4 @@ loadArticles();
 loadActivities();
 loadRelatedSections();
 loadMainNav();
+loadImageLibrary();
