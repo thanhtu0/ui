@@ -6,16 +6,20 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
 		<link
+			rel="icon"
+			href="./assets/images/favicon.ico" />
+		<link
 			rel="stylesheet"
-			href="./assets/css/style.css
-            " />
+			href="./assets/css/style.css" />
 		<title>Home Page</title>
 	</head>
 	<body>
 		<div class="container">
 			<div class="header">
 				<div class="top-header">
-					<div class="left-header">
+					<div
+						class="left-header align-center"
+						style="gap: 8px">
 						<img
 							src="../news/assets/images/header/logo-icon.png"
 							alt="Logo"
@@ -25,22 +29,23 @@
 							<span class="subtitle">TỈNH THỪA THIÊN HUẾ</span>
 						</div>
 					</div>
+
 					<div class="right-header">
 						<form
-							class="search-form"
+							class="search-form align-center"
 							role="search"
 							action="/search"
 							method="GET">
 							<input
 								type="search"
 								name="q"
-								class="search-input"
+								class="search-input text-desc"
 								placeholder="Tìm kiếm..."
 								aria-label="Tìm kiếm"
 								autocomplete="off" />
 							<button
 								type="submit"
-								class="search-btn"
+								class="search-btn flex-center"
 								aria-label="Nút tìm kiếm">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -66,64 +71,64 @@
 						</form>
 					</div>
 				</div>
-				<div class="navigation">
+				<div class="navigation flex-center">
 					<nav
 						class="main-nav"
 						aria-label="Điều hướng chính">
-						<ul class="nav-list">
+						<ul class="nav-list align-center">
 							<li class="nav-item">
 								<a
 									href="#"
-									class="nav-link active"
+									class="nav-link align-center active"
 									>TRANG CHỦ</a
 								>
 							</li>
 							<li class="nav-item">
 								<a
 									href="#"
-									class="nav-link"
+									class="nav-link align-center"
 									>GIỚI THIỆU</a
 								>
 							</li>
 							<li class="nav-item">
 								<a
 									href="../news/index.html"
-									class="nav-link"
+									class="nav-link align-center"
 									>TIN TỨC - SỰ KIỆN</a
 								>
 							</li>
 							<li class="nav-item">
 								<a
 									href="#"
-									class="nav-link"
+									class="nav-link align-center"
 									>TÌM THÂN NHÂN</a
 								>
 							</li>
 							<li class="nav-item">
 								<a
 									href="#"
-									class="nav-link"
+									class="nav-link align-center"
 									>HOẠT ĐỘNG ĐOÀN THỂ</a
 								>
 							</li>
 							<li class="nav-item">
 								<a
 									href="#"
-									class="nav-link"
+									class="nav-link align-center"
 									>HOẠT ĐỘNG TÀI TRỢ</a
 								>
 							</li>
 							<li class="nav-item">
 								<a
 									href="#"
-									class="nav-link"
+									class="nav-link align-center"
 									>VĂN BẢN - THỐNG KÊ</a
 								>
 							</li>
 							<li class="nav-item">
 								<a
 									href="#"
-									class="nav-link"
+									class="nav-link align-center"
 									>THƯ VIỆN MEDIA</a
 								>
 							</li>
@@ -131,22 +136,26 @@
 					</nav>
 				</div>
 			</div>
+
 			<div class="main-content">
 				<div class="content">
 					<main class="left-content">
 						<div class="banner-widget">
-							<div class="banner">
+							<div
+								class="banner"
+								style="padding: 0 0 8px 0">
 								<img
 									src="./assets/images/banner/top_banner.png"
 									alt="Kỷ niệm ngày Giải phóng miền Nam, thống nhất đất nước 30/4 và Quốc tế Lao động 1/5" />
 							</div>
 
-							<div class="announcement">
-								<span class="announcement-title">Thông báo</span>
+							<div class="announcement align-center">
+								<span class="announcement-title text-title">Thông báo</span>
 								<div class="announcement-marquee">
 									<a
 										href="#"
-										class="announcement-link">
+										class="announcement-link text-subtitle"
+										style="color: red">
 										Thư kêu gọi về việc xin hỗ trợ kinh phí, đồ dùng sinh hoạt phục vụ cho người
 										khuyết tật nặng và đặc biệt nặng về tâm thần kinh hiện đang được quản lý, nuôi
 										dưỡng, phối hợp điều trị tại Trung tâm
@@ -155,19 +164,21 @@
 							</div>
 						</div>
 
-						<div class="section-badge">
-							<div class="section-badge-content">
-								<span class="icon">
-									<img
-										src="./assets/images/list-icon/title/feed.png"
-										alt="TIN HOẠT ĐỘNG" />
-								</span>
+						<div
+							id="article-list"
+							class="article-list">
+							<div class="section-title">
+								<div class="section-title-content has-accent align-center">
+									<span class="icon-title flex-center">
+										<img
+											src="./assets/images/list-icon/title/feed.png"
+											alt="TIN HOẠT ĐỘNG" />
+									</span>
 
-								<h2 class="title">TIN HOẠT ĐỘNG</h2>
+									<h2 class="text-title">TIN HOẠT ĐỘNG</h2>
+								</div>
 							</div>
-						</div>
 
-						<div class="article-list">
 							<article class="article-item featured">
 								<a
 									href="#"
@@ -179,7 +190,7 @@
 								</a>
 
 								<div class="article-info">
-									<h3 class="article-title">
+									<h3 class="article-title text-subtitle line-clamp">
 										<a href="#">
 											Trung tâm Bảo trợ xã hội tổ chức Hội thao chào mừng kỷ niệm 25 năm Ngày
 											người khuyết tật Việt Nam dành cho người khuyết tật thần kinh tâm thần tại
@@ -187,17 +198,14 @@
 										</a>
 									</h3>
 
-									<div class="meta-time">
-										<span class="icon">
-											<img
-												class="schedule"
-												src="./assets/images/list-icon/schedule.png"
-												alt="" />
-										</span>
+									<div class="date-meta align-center text-sm-desc">
+										<img
+											src="./assets/images/list-icon/schedule.png"
+											alt="" />
 										<span>19/04/2023</span>
 									</div>
 
-									<p class="article-desc">
+									<p class="article-desc text-desc line-clamp-3">
 										Sáng ngày 18/4/2023 tại Trung tâm Bảo trợ xã hội đã tổ chức Hội thao chào mừng
 										kỷ niệm 25 năm Ngày người khuyết tật Việt nam (18/4/1998 -18/4/2023) dành cho
 										người khuyết tật thần kinh tâm thần tại Trung tâm. Nhằm trợ giúp xã hội và phục
@@ -220,24 +228,21 @@
 								</a>
 
 								<div class="article-info">
-									<h3 class="article-title">
+									<h3 class="article-title text-subtitle line-clamp-3">
 										<a href="#"
 											>Trung tâm Bảo trợ xã hội tổ chức chương trình gặp mặt người khuyết tật thần
 											kinh tâm thần nhân 113 năm Ngày Quốc tế phụ nữ (8/3/1910 -8/3/2023)</a
 										>
 									</h3>
 
-									<div class="meta-time">
-										<span class="icon">
-											<img
-												class="schedule"
-												src="./assets/images/list-icon/schedule.png"
-												alt="" />
-										</span>
+									<div class="date-meta align-center text-sm-desc">
+										<img
+											src="./assets/images/list-icon/schedule.png"
+											alt="" />
 										<span>09/03/2023</span>
 									</div>
 
-									<p class="article-desc">
+									<p class="article-desc text-desc line-clamp">
 										Ngày 18/12/2022 ông Ngô Duy Bình - Chủ tịch Hội Cựu chiến binh Sở Lao động -
 										Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đại diện cho Hội Cựu chiến binh Sở
 										Lao động - Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đến thăm và tặng quà cho
@@ -260,24 +265,21 @@
 								</a>
 
 								<div class="article-info">
-									<h3 class="article-title">
+									<h3 class="article-title text-subtitle line-clamp-3">
 										<a href="#"
 											>Trung tâm Bảo trợ xã hội tổ chức gặp mặt viên chức và người lao động Phòng
 											Y tế phục hồi chức năng nhân Ngày thầy thuốc Việt Nam 27/2</a
 										>
 									</h3>
 
-									<div class="meta-time">
-										<span class="icon">
-											<img
-												class="schedule"
-												src="./assets/images/list-icon/schedule.png"
-												alt="" />
-										</span>
+									<div class="date-meta align-center text-sm-desc">
+										<img
+											src="./assets/images/list-icon/schedule.png"
+											alt="" />
 										<span>28/02/2023</span>
 									</div>
 
-									<p class="article-desc">
+									<p class="article-desc text-desc line-clamp">
 										Ngày 18/12/2022 ông Ngô Duy Bình - Chủ tịch Hội Cựu chiến binh Sở Lao động -
 										Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đại diện cho Hội Cựu chiến binh Sở
 										Lao động - Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đến thăm và tặng quà cho
@@ -300,24 +302,21 @@
 								</a>
 
 								<div class="article-info">
-									<h3 class="article-title">
+									<h3 class="article-title text-subtitle line-clamp-3">
 										<a href="#">
 											Lễ ra mắt Câu lạc bộ Văn thể mỹ cho người khuyết tật thần kinh tâm thần tại
 											Trung tâm Bảo trợ xã hội
 										</a>
 									</h3>
 
-									<div class="meta-time">
-										<span class="icon">
-											<img
-												class="schedule"
-												src="./assets/images/list-icon/schedule.png"
-												alt="" />
-										</span>
+									<div class="date-meta align-center text-sm-desc">
+										<img
+											src="./assets/images/list-icon/schedule.png"
+											alt="" />
 										<span>08/02/2022</span>
 									</div>
 
-									<p class="article-desc">
+									<p class="article-desc text-desc line-clamp">
 										Ngày 18/12/2022 ông Ngô Duy Bình - Chủ tịch Hội Cựu chiến binh Sở Lao động -
 										Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đại diện cho Hội Cựu chiến binh Sở
 										Lao động - Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đến thăm và tặng quà cho
@@ -330,27 +329,25 @@
 							</article>
 						</div>
 
-						<div
-							class="banner"
-							style="padding: 40px 0">
+						<div class="banner">
 							<img
 								src="./assets/images/banner/center_banner.png"
 								alt="Trang thông tin điện tử. Khám phá Huế" />
 						</div>
 
-						<div class="group-activity">
-							<div class="group-activity-header">
-								<div class="group-activity-title">
-									<span class="icon">
+						<div class="activities">
+							<div class="activities-header">
+								<div class="section-title-content has-accent align-center">
+									<span class="icon-title flex-center">
 										<img
 											src="../news/assets/images/content/title/feed.png"
 											alt="" />
 									</span>
 
-									<h2 class="title">HOẠT ĐỘNG ĐOÀN THỂ</h2>
+									<h2 class="text-title">HOẠT ĐỘNG ĐOÀN THỂ</h2>
 								</div>
 
-								<nav class="group-activity-nav">
+								<nav class="activities-nav text-subtitle align-center">
 									<a
 										href="#"
 										class="active"
@@ -363,23 +360,23 @@
 								</nav>
 							</div>
 
-							<div class="group-activity-list">
-								<article class="group-activity-item">
+							<div class="activities-list">
+								<article class="activities-item">
 									<a
 										href="#"
-										class="group-activity-thumb">
+										class="activities-thumb">
 										<img
 											src="./assets/images/list_activity/img_1.png"
 											alt="Chi bộ Trung tâm Bảo trợ xã hội tổ chức lễ kết nạp Đảng viên mới" />
 									</a>
 
-									<h3 class="group-activity-item-title">
+									<h3 class="activities-item-title text-subtitle line-clamp-3">
 										<a href="#">
 											Chi bộ Trung tâm Bảo trợ xã hội tổ chức lễ kết nạp Đảng viên mới
 										</a>
 									</h3>
 
-									<div class="group-activity-date">
+									<div class="date-meta align-center text-sm-desc">
 										<img
 											src="./assets/images/list-icon/schedule.png"
 											alt="" />
@@ -387,23 +384,23 @@
 									</div>
 								</article>
 
-								<article class="group-activity-item">
+								<article class="activities-item">
 									<a
 										href="#"
-										class="group-activity-thumb">
+										class="activities-thumb">
 										<img
 											src="./assets/images/list_activity/img_2.png"
 											alt="Chi đoàn Trung tâm Bảo trợ xã hội tổ chức gặp mặt đoàn viên thanh niên" />
 									</a>
 
-									<h3 class="group-activity-item-title">
+									<h3 class="activities-item-title text-subtitle line-clamp-3">
 										<a href="#">
 											Chi đoàn Trung tâm Bảo trợ xã hội tổ chức gặp mặt đoàn viên thanh niên nhân
 											Chi đoàn Trung tâm kỷ niệm 92 năm ngày Thành...
 										</a>
 									</h3>
 
-									<div class="group-activity-date">
+									<div class="date-meta align-center text-sm-desc">
 										<img
 											src="./assets/images/list-icon/schedule.png"
 											alt="" />
@@ -411,23 +408,23 @@
 									</div>
 								</article>
 
-								<article class="group-activity-item">
+								<article class="activities-item">
 									<a
 										href="#"
-										class="group-activity-thumb">
+										class="activities-thumb">
 										<img
 											src="./assets/images/list_activity/img_3.png"
 											alt="Hội Cựu chiến binh Sở Lao động - Thương binh và Xã hội" />
 									</a>
 
-									<h3 class="group-activity-item-title">
+									<h3 class="activities-item-title text-subtitle line-clamp-3">
 										<a href="#">
 											Hội Cựu chiến binh Sở Lao động - Thương binh và Xã hội Thừa Thiên Huế tổ
 											chức Hội nghị triển khai nhiệm vụ công tác Hội năm...
 										</a>
 									</h3>
 
-									<div class="group-activity-date">
+									<div class="date-meta align-center text-sm-desc">
 										<img
 											src="./assets/images/list-icon/schedule.png"
 											alt="" />
@@ -439,14 +436,16 @@
 
 						<div class="related-sections">
 							<section class="related-section">
-								<div class="related-section-header">
-									<span class="related-section-icon">
-										<img
-											src="./assets/images/list-icon/title/handshake.png"
-											alt="" />
-									</span>
+								<div class="section-title">
+									<div class="section-title-content align-center">
+										<span class="icon-title flex-center">
+											<img
+												src="./assets/images/list-icon/title/handshake.png"
+												alt="" />
+										</span>
 
-									<h2 class="related-section-title">TIN HOẠT ĐỘNG TÀI TRỢ</h2>
+										<h2 class="text-title">TIN HOẠT ĐỘNG TÀI TRỢ</h2>
+									</div>
 								</div>
 
 								<div class="related-section-list">
@@ -457,22 +456,19 @@
 											alt="" />
 
 										<div class="related-article-list">
-											<h3 class="related-article-title">
+											<h3 class="text-subtitle line-clamp-3">
 												Trung tâm Bảo trợ xã hội tổ chức chương trình Vui tết trung thu cho
 												người khuyết tật thần kinh tâm thần đang được nuôi dưỡng tại trung tâm
 											</h3>
 
-											<div class="related-article-meta">
-												<span class="related-article-meta-icon">
-													<img
-														src="./assets/images/list-icon/schedule.png"
-														alt="" />
-												</span>
-
+											<div class="date-meta align-center text-sm-desc">
+												<img
+													src="./assets/images/list-icon/schedule.png"
+													alt="" />
 												<span>10/09/2022</span>
 											</div>
 
-											<p class="related-article-description">
+											<p class="text-desc line-clamp-3">
 												Tết Trung thu được biết đến như một ngày Tết của tình thân, của sự yêu
 												thương và sum vầy. Vào ngày này, mọi người sẽ trao nhau những món quà, ở
 												bên gia đình và tổ chức những buổi tiệc nhỏ ấm cúng. Đặc biệt, Trung thu
@@ -484,56 +480,54 @@
 
 									<article class="related-article">
 										<div class="related-article-list">
-											<h3 class="related-article-title">
+											<h3 class="text-subtitle line-clamp-3">
 												Ngân hàng Đầu tư và phát triển Việt Nam BIDV chi nhánh Thừa Thiên Huế
 												tặng quà tại Trung tâm Bảo trợ xã hội tỉnh Thừa Thiên Huế
 											</h3>
 
-											<div class="related-article-meta">
-												<span class="related-article-meta-icon">
-													<img
-														src="./assets/images/list-icon/schedule.png"
-														alt="" />
-												</span>
+											<div class="date-meta align-center text-sm-desc">
+												<img
+													src="./assets/images/list-icon/schedule.png"
+													alt="" />
 												<span>07/09/2021</span>
 											</div>
 
-											<p class="related-article-description"></p>
+											<p class="text-desc line-clamp-3"></p>
 										</div>
 									</article>
 
 									<article class="related-article">
 										<div class="related-article-list">
-											<h3 class="related-article-title">
+											<h3 class="text-subtitle line-clamp-3">
 												Tổ chức DOVE Fund tài trợ chương trình cải thiện đời sống, tinh thần cho
 												bệnh nhân tâm thần ở trung tâm Bảo trợ Xã hội Thừa Thiên Huế
 											</h3>
 
-											<div class="related-article-meta">
-												<span class="related-article-meta-icon">
-													<img
-														src="./assets/images/list-icon/schedule.png"
-														alt="" />
-												</span>
+											<div class="date-meta align-center text-sm-desc">
+												<img
+													src="./assets/images/list-icon/schedule.png"
+													alt="" />
 
 												<span>05/03/2021</span>
 											</div>
 
-											<p class="related-article-description"></p>
+											<p class="text-desc line-clamp-3"></p>
 										</div>
 									</article>
 								</div>
 							</section>
 
 							<section class="related-section">
-								<div class="related-section-header">
-									<span class="related-section-icon">
-										<img
-											src="./assets/images/list-icon/title/feed.png"
-											alt="" />
-									</span>
+								<div class="section-title">
+									<div class="section-title-content align-center">
+										<span class="icon-title flex-center">
+											<img
+												src="./assets/images/list-icon/title/feed.png"
+												alt="" />
+										</span>
 
-									<h2 class="related-section-title">TIN TỔNG HỢP LIÊN QUAN</h2>
+										<h2 class="text-title">TIN TỔNG HỢP LIÊN QUAN</h2>
+									</div>
 								</div>
 
 								<div class="related-section-list">
@@ -544,23 +538,21 @@
 											alt="" />
 
 										<div class="related-article-list">
-											<h3 class="related-article-title">
+											<h3 class="text-subtitle line-clamp-3">
 												Hoạt động Kỷ niệm 78 năm ngày thành lập Quân đội nhân dân Việt Nam
 												(22/12/1944 - 22/12/2022) của Hội cựu chiến binh Sở Lao động - Thương
 												binh và Xã hội tỉnh Thừa Thiên Huế
 											</h3>
 
-											<div class="related-article-meta">
-												<span class="related-article-meta-icon">
-													<img
-														src="./assets/images/list-icon/schedule.png"
-														alt="" />
-												</span>
+											<div class="date-meta align-center text-sm-desc">
+												<img
+													src="./assets/images/list-icon/schedule.png"
+													alt="" />
 
 												<span>21/12/2022</span>
 											</div>
 
-											<p class="related-article-description">
+											<p class="text-desc line-clamp-3">
 												Ngày 18/12/2022 ông Ngô Duy Bình - Chủ tịch Hội Cựu chiến binh Sở Lao
 												động - Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đại diện cho Hội đến
 												thăm và tặng quà cho các cháu nhỏ mồ côi tại Trung tâm Công tác xã hội
@@ -571,68 +563,62 @@
 
 									<article class="related-article">
 										<div class="related-article-list">
-											<h3 class="related-article-title">
+											<h3 class="text-subtitle line-clamp-3">
 												Trung tâm Bảo trợ xã hội tổ chức gặp mặt người khuyết tật thần kinh tâm
 												thần cao tuổi đang được chăm sóc nuôi dưỡng tại trung tâm với chủ đề
 												"Chung tay chăm sóc người cao tuổi có hoàn cảnh khó khăn".
 											</h3>
 
-											<div class="related-article-meta">
-												<span class="related-article-meta-icon">
-													<img
-														src="./assets/images/list-icon/schedule.png"
-														alt="" />
-												</span>
+											<div class="date-meta align-center text-sm-desc">
+												<img
+													src="./assets/images/list-icon/schedule.png"
+													alt="" />
 
 												<span>07/10/2022</span>
 											</div>
 
-											<p class="related-article-description"></p>
+											<p class="text-desc line-clamp-3"></p>
 										</div>
 									</article>
 
 									<article class="related-article">
 										<div class="related-article-list">
-											<h3 class="related-article-title">
+											<h3 class="text-subtitle line-clamp-3">
 												Trung tâm Bảo trợ xã hội phối hợp với Trung tâm Ứng dụng tiến bộ khoa
 												học và công nghệ thực hiện chuyển giao công nghệ trồng trọt và chăn nuôi
 												tại trung tâm
 											</h3>
 
-											<div class="related-article-meta">
-												<span class="related-article-meta-icon">
-													<img
-														src="./assets/images/list-icon/schedule.png"
-														alt="" />
-												</span>
+											<div class="date-meta align-center text-sm-desc">
+												<img
+													src="./assets/images/list-icon/schedule.png"
+													alt="" />
 
 												<span>10/01/2022</span>
 											</div>
-											<p class="related-article-description"></p>
+											<p class="text-desc line-clamp-3"></p>
 										</div>
 									</article>
 								</div>
 							</section>
 						</div>
 
-						<div
-							class="banner"
-							style="padding: 40px 0">
+						<div class="banner">
 							<img
 								src="./assets/images/banner/bottom_banner.png"
 								alt="THỪA THIÊN HUẾ trên bước đường trở thành THÀNH PHỐ TRỰC THUỘC TRUNG ƯƠNG" />
 						</div>
 
 						<div class="image-library">
-							<div class="image-library-header">
-								<div class="image-library-title">
-									<span class="image-library-icon">
+							<div class="section-title">
+								<div class="section-title-content has-accent align-center">
+									<span class="icon-title flex-center">
 										<img
 											src="./assets/images/list-icon/perm_media.png"
 											alt="" />
 									</span>
 
-									<h2 class="title">THƯ VIỆN HÌNH ẢNH</h2>
+									<h2 class="text-title">THƯ VIỆN HÌNH ẢNH</h2>
 								</div>
 							</div>
 
@@ -646,7 +632,7 @@
 											alt="Hội thao chào mừng kỷ niệm 25 năm ngày Người khuyết tật Việt Nam" />
 									</a>
 
-									<h3 class="image-library-item-title">
+									<h3 class="image-library-item-title text-subtitle line-clamp">
 										<a href="#"> Hội thao chào mừng kỷ niệm 25 năm ngày Người khuyết tật... </a>
 									</h3>
 								</article>
@@ -660,7 +646,7 @@
 											alt="Lễ ra mắt Câu lạc bộ văn thể mỹ" />
 									</a>
 
-									<h3 class="image-library-item-title">
+									<h3 class="image-library-item-title text-subtitle line-clamp">
 										<a href="#"> Lễ ra mắt Câu lạc bộ văn thể mỹ </a>
 									</h3>
 								</article>
@@ -674,7 +660,7 @@
 											alt="Gặp mặt người khuyết tật thần kinh tâm thần" />
 									</a>
 
-									<h3 class="image-library-item-title">
+									<h3 class="image-library-item-title text-subtitle line-clamp">
 										<a href="#"> Gặp mặt người khuyết tật thần kinh tâm thần nhân 113... </a>
 									</h3>
 								</article>
@@ -688,7 +674,7 @@
 											alt="Chương trình Vui tết Trung thu" />
 									</a>
 
-									<h3 class="image-library-item-title">
+									<h3 class="image-library-item-title text-subtitle line-clamp">
 										<a href="#"> Chương trình “Vui tết Trung thu” cho Người khuyết tật... </a>
 									</h3>
 								</article>
@@ -696,22 +682,22 @@
 						</div>
 
 						<div class="office-contact">
-							<div class="section-badge">
-								<div class="section-badge-content">
-									<span class="icon">
+							<div class="section-title">
+								<div class="section-title-content has-accent align-center">
+									<span class="icon-title flex-center">
 										<img
 											src="./assets/images/list-icon/map.png"
 											alt="LIÊN HỆ" />
 									</span>
 
-									<h2 class="title">LIÊN HỆ</h2>
+									<h2 class="text-title">LIÊN HỆ</h2>
 								</div>
 							</div>
 
 							<div class="office-contact-content">
 								<div class="office-contact-map">
 									<iframe
-										src="https://maps.google.com/maps?q=55%20Ch%C3%A2m%2C%20H%C6%B0%C6%A1ng%20H%E1%BB%93%2C%20Hu%E1%BA%BF&t=&z=14&ie=UTF8&iwloc=&output=embed"
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.3268831462383!2d107.57902497513851!3d16.45897772888626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a149e050b84b%3A0xb17d381011b09e63!2zVHJ1bmcgdMOibSBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB0aMOgbmggcGjhu5EgSHXhur8!5e0!3m2!1svi!2s!4v1790326390320!5m2!1svi!2s"
 										width="100%"
 										height="100%"
 										style="border: 0"
@@ -723,41 +709,49 @@
 
 								<div class="office-contact-list">
 									<div class="office-contact-item">
-										<span class="office-contact-icon">
+										<span class="office-contact-icon flex-center">
 											<img
 												src="./assets/images/list-icon/location_on_white.png"
 												alt="" />
 										</span>
 
 										<div class="office-contact-detail">
-											<h3>Địa chỉ</h3>
-											<p>Số 55 đường Chăm, phường Hương Hồ, thành phố Huế, tỉnh Thừa Thiên Huế</p>
+											<h3 class="text-subtitle">Địa chỉ</h3>
+											<p
+												class="text-desc"
+												style="color: #5e718f">
+												Số 55 đường Chăm, phường Hương Hồ, thành phố Huế, tỉnh Thừa Thiên Huế
+											</p>
 										</div>
 									</div>
 
 									<div class="office-contact-item">
-										<span class="office-contact-icon">
+										<span class="office-contact-icon flex-center">
 											<img
 												src="./assets/images/list-icon/deskphone_white.png"
 												alt="" />
 										</span>
 
 										<div class="office-contact-detail">
-											<h3>Số điện thoại</h3>
-											<p>(0234) - 3769000 - 3769002 - 3769006</p>
+											<h3 class="text-subtitle">Số điện thoại</h3>
+											<p
+												class="text-desc"
+												style="color: #5e718f">
+												(0234) - 3769000 - 3769002 - 3769006
+											</p>
 										</div>
 									</div>
 
 									<div class="office-contact-item">
-										<span class="office-contact-icon">
+										<span class="office-contact-icon flex-center">
 											<img
 												src="./assets/images/list-icon/call_white.png"
 												alt="" />
 										</span>
 
 										<div class="office-contact-detail">
-											<h3>Di động</h3>
-											<p>0913 465 437 - 090 551 515</p>
+											<h3 class="text-subtitle">Di động</h3>
+											<p style="color: #5e718f">0913 465 437 - 090 551 515</p>
 										</div>
 									</div>
 								</div>
@@ -773,18 +767,20 @@
 						</div>
 
 						<div class="widget news-widget">
-							<div class="widget-title">
-								<span class="icon">
+							<div
+								class="section-title-content align-center"
+								style="border-bottom: 1px solid #e3e6eb; width: 100%">
+								<span class="icon-title flex-center">
 									<img
 										src="./assets/images/list-icon/groups.png"
 										alt="" />
 								</span>
 
-								<h2 class="title">TÌM NHÂN THÂN</h2>
+								<h2 class="text-title">TÌM NHÂN THÂN</h2>
 							</div>
 
 							<div class="mini-post-list">
-								<h3>THÔNG BÁO TÌM NGƯỜI NHÀ</h3>
+								<h3 class="text-subtitle">THÔNG BÁO TÌM NGƯỜI NHÀ</h3>
 
 								<div class="mini-post">
 									<img
@@ -793,11 +789,11 @@
 										class="mini-thumb" />
 
 									<div class="mini-content">
-										<h5>
+										<h4 class="text-subtitle">
 											<a href="#">Nguyễn Văn A</a>
-										</h5>
+										</h4>
 
-										<p class="mini-desc">
+										<p class="mini-desc text-sm-desc">
 											Thông tin mô tả; thời gian tiếp nhận; Đặc điểm nhận dạng v.v...
 										</p>
 									</div>
@@ -810,11 +806,11 @@
 										class="mini-thumb" />
 
 									<div class="mini-content">
-										<h5>
+										<h4 class="text-subtitle">
 											<a href="#">Nguyễn Văn B</a>
-										</h5>
+										</h4>
 
-										<p class="mini-desc">
+										<p class="mini-desc text-sm-desc">
 											Thông tin mô tả; thời gian tiếp nhận; Đặc điểm nhận dạng v.v...
 										</p>
 									</div>
@@ -827,11 +823,11 @@
 										class="mini-thumb" />
 
 									<div class="mini-content">
-										<h5>
+										<h4 class="text-subtitle">
 											<a href="#">Trần Văn A</a>
-										</h5>
+										</h4>
 
-										<p class="mini-desc">
+										<p class="mini-desc text-sm-desc">
 											Thông tin mô tả; thời gian tiếp nhận; Đặc điểm nhận dạng v.v...
 										</p>
 									</div>
@@ -839,7 +835,7 @@
 							</div>
 
 							<div class="contact-info">
-								<h4>Mọi thông tin xin liên hệ</h4>
+								<h4 class="title">Mọi thông tin xin liên hệ</h4>
 
 								<div class="contact-item">
 									<span class="contact-icon">
@@ -848,7 +844,9 @@
 											alt="" />
 									</span>
 
-									<p>Số 55 đường Chăm, phường Hương Hồ, thành phố Huế, tỉnh Thừa Thiên Huế</p>
+									<p class="text-sm-desc">
+										Số 55 đường Chăm, phường Hương Hồ, thành phố Huế, tỉnh Thừa Thiên Huế
+									</p>
 								</div>
 
 								<div class="contact-item">
@@ -858,7 +856,7 @@
 											alt=""
 									/></span>
 
-									<p>(0234) - 3769000 - 3769002 - 3769006</p>
+									<p class="text-sm-desc">(0234) - 3769000 - 3769002 - 3769006</p>
 								</div>
 
 								<div class="contact-item">
@@ -868,13 +866,13 @@
 											alt=""
 									/></span>
 
-									<p>0913 465 437 - 090 551 515</p>
+									<p class="text-sm-desc">0913 465 437 - 090 551 515</p>
 								</div>
 							</div>
 
 							<a
 								href="#"
-								class="find-relative-btn">
+								class="find-relative-btn flex-center text-button">
 								ĐĂNG TÌM NGƯỜI THÂN
 							</a>
 						</div>
@@ -882,8 +880,8 @@
 						<div class="widget banner-widget">
 							<a
 								href="#"
-								class="cta-card pink">
-								<span class="cta-icon">
+								class="cta-card align-center pink">
+								<span class="cta-icon flex-center">
 									<img
 										src="./assets/images/list-banner/Frame.png"
 										alt="" />
@@ -892,8 +890,8 @@
 							</a>
 							<a
 								href="#"
-								class="cta-card pink">
-								<span class="cta-icon">
+								class="cta-card align-center pink">
+								<span class="cta-icon flex-center">
 									<img
 										src="./assets/images/list-banner/Frame.png"
 										alt="" />
@@ -902,18 +900,22 @@
 							</a>
 							<a
 								href="#"
-								class="cta-card green">
-								<span class="cta-icon">
+								class="cta-card align-center pink">
+								<span class="cta-icon flex-center">
 									<img
 										src="./assets/images/list-banner/icon-vb.png"
 										alt="" />
 								</span>
-								<span class="cta-text">VĂN BẢN PHÁP LUẬT</span>
+								<span
+									class="cta-text"
+									style="color: #e74c55"
+									>VĂN BẢN PHÁP LUẬT</span
+								>
 							</a>
 							<a
 								href="#"
-								class="cta-card blue">
-								<span class="cta-icon">
+								class="cta-card align-center blue">
+								<span class="cta-icon flex-center">
 									<img
 										src="./assets/images/list-banner/icon-thutuc.png"
 										alt="" />
@@ -923,17 +925,17 @@
 						</div>
 
 						<div class="widget appeal-widget">
-							<div class="appeal-title">
-								<span class="appeal-icon">
+							<div class="section-title-content align-center">
+								<span class="icon-title flex-center">
 									<img
 										src="./assets/images/list-icon/campaign.png"
 										alt="" />
 								</span>
 
-								<h3>Thư kêu gọi</h3>
+								<h3 class="text-title">Thư kêu gọi</h3>
 							</div>
 
-							<p class="appeal-content">
+							<p class="text-desc">
 								Về việc xin hỗ trợ kinh phí, đồ dùng sinh hoạt phục vụ cho người khuyết tật nặng và đặc
 								biệt nặng về tâm thần kinh hiện đang được quản lý, nuôi dưỡng, phối hợp điều trị tại
 								Trung tâm
@@ -941,7 +943,7 @@
 						</div>
 
 						<div class="widget sponsor-widget">
-							<h3 class="sponsor-title">
+							<h3 class="sponsor-title text-title">
 								Danh sách cá nhân, đơn vị<br />
 								đăng ký tài trợ, hỗ trợ
 							</h3>
@@ -949,74 +951,78 @@
 							<div class="sponsor-list">
 								<a
 									href="#"
-									class="sponsor-item">
+									class="sponsor-item align-center">
 									<img
 										src="./assets/images/list-sponsor/img_1.png"
 										alt="" />
 
-									<span>Chùa Tường Vân Huế</span>
+									<span class="text-subtitle">Chùa Tường Vân Huế</span>
 								</a>
 
 								<a
 									href="#"
-									class="sponsor-item">
+									class="sponsor-item align-center">
 									<img
 										src="./assets/images/list-sponsor/img_2.png"
 										alt="" />
 
-									<span>Sở Ngoại vụ Thừa Thiên Huế</span>
+									<span class="text-subtitle">Sở Ngoại vụ Thừa Thiên Huế</span>
 								</a>
 
 								<a
 									href="#"
-									class="sponsor-item">
+									class="sponsor-item align-center">
 									<img
 										src="./assets/images/list-sponsor/img_3.png"
 										alt="" />
 
-									<span> Trung tâm hỗ trợ Nhân đạo và Thiết bị trường học Huế </span>
+									<span class="text-subtitle">
+										Trung tâm hỗ trợ Nhân đạo và Thiết bị trường học Huế
+									</span>
 								</a>
 
 								<a
 									href="#"
-									class="sponsor-item">
+									class="sponsor-item align-center">
 									<img
 										src="./assets/images/list-sponsor/img_4.png"
 										alt="" />
 
-									<span> Công ty TNHH Thiên Hương Huế </span>
+									<span class="text-subtitle"> Công ty TNHH Thiên Hương Huế </span>
 								</a>
 
 								<a
 									href="#"
-									class="sponsor-item">
+									class="sponsor-item align-center">
 									<img
 										src="./assets/images/list-sponsor/img_5.png"
 										alt="" />
 
-									<span>Quỹ những trái tim Huế</span>
+									<span class="text-subtitle">Quỹ những trái tim Huế</span>
 								</a>
 
 								<a
 									href="#"
-									class="sponsor-item">
+									class="sponsor-item align-center">
 									<img
 										src="./assets/images/list-sponsor/img_6.png"
 										alt="" />
 
-									<span>Quỹ Dove Fund Mỹ</span>
+									<span class="text-subtitle">Quỹ Dove Fund Mỹ</span>
 								</a>
 							</div>
 						</div>
 
 						<div class="widget video-widget">
-							<div class="video-widget-title">
-								<span class="video-widget-icon">
+							<div
+								class="section-title-content align-center"
+								style="border-bottom: 1px solid #e3e6eb; width: 100%">
+								<span class="icon-title flex-center">
 									<img
 										src="./assets/images/list-icon/subscriptions.png"
 										alt="" />
 								</span>
-								<h3>THƯ VIỆN VIDEO</h3>
+								<h3 class="text-title">THƯ VIỆN VIDEO</h3>
 							</div>
 
 							<a
@@ -1027,19 +1033,21 @@
 										src="./assets/images/list_video/video_1.png"
 										alt="Hội thao chào mừng kỷ niệm 25 năm ngày Người khuyết tật Việt Nam" />
 
-									<span class="play-button">
+									<span class="play-button flex-center">
 										<img
 											src="./assets/images/list-icon/play_arrow.png"
 											alt="" />
 									</span>
 								</div>
 
-								<h4>Hội thao chào mừng kỷ niệm 25 năm ngày Người khuyết tật Việt Nam</h4>
+								<h4 class="text-subtitle">
+									Hội thao chào mừng kỷ niệm 25 năm ngày Người khuyết tật Việt Nam
+								</h4>
 							</a>
 						</div>
 
 						<div class="widget website-links">
-							<h4 class="widget-heading-text">LIÊN KẾT WEBSITE</h4>
+							<h4 class="widget-heading-text text-title">LIÊN KẾT WEBSITE</h4>
 							<a
 								href="#"
 								class="banner-link"
@@ -1067,17 +1075,17 @@
 			</div>
 
 			<div class="footer">
-				<div class="footer-container">
+				<div class="footer-container align-center">
 					<div class="left-footer">
-						<h2 class="title">TRUNG TÂM BẢO TRỢ XÃ HỘI TỈNH THỪA THIÊN HUẾ</h2>
-						<p class="info-item">
+						<h2 class="text-title">TRUNG TÂM BẢO TRỢ XÃ HỘI TỈNH THỪA THIÊN HUẾ</h2>
+						<p class="info-item text-desc">
 							Địa chỉ: Số 55 đường Chấm, phường Hương Hồ, thành phố Huế, tỉnh Thừa Thiên Huế
 						</p>
-						<p class="info-item">
+						<p class="info-item text-desc">
 							Số điện thoại: (0234) - 3769000 - 3769002 - 3769006 &nbsp;&nbsp;&nbsp;&nbsp; Di động: 0913
 							465 437 - 090 551 1515
 						</p>
-						<p class="info-item">
+						<p class="info-item text-desc">
 							Số tài khoản: <strong>371301060855</strong> tại Kho bạc Nhà nước tỉnh Thừa Thiên Huế
 						</p>
 					</div>
@@ -1085,13 +1093,14 @@
 					<div class="right-footer">
 						<a
 							href="#lien-he"
-							class="btn-feedback"
+							class="btn-feedback text-button"
 							>LIÊN HỆ - GÓP Ý</a
 						>
-						<p class="start-item">Tổng lượt truy cập: <span class="counter">126966</span></p>
-						<p class="start-item">
+						<p class="start-item text-desc">Tổng lượt truy cập: <span class="text-title">126966</span></p>
+						<p class="start-item text-desc">
 							Thiết kế và xây dựng:
 							<a
+								class="text-subtitle"
 								href="#"
 								target="_blank"
 								>HueCIT</a
@@ -1102,4 +1111,5 @@
 			</div>
 		</div>
 	</body>
+	<script src="./assets/js/script.js"></script>
 </html>
