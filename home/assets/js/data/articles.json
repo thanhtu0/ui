@@ -1,13 +1,13 @@
 {
 	"icon": "./assets/images/list-icon/title/feed.png",
 	"title": "Tin hoạt động",
+	"dateIcon": "./assets/images/list-icon/schedule.png",
 	"articles": [
 		{
 			"id": 1,
 			"featured": true,
 			"image": "../home/assets/images/list-article/img_1.png",
 			"title": "Trung tâm Bảo trợ xã hội tổ chức Hội thao chào mừng kỷ niệm 25 năm Ngày người khuyết tật Việt Nam dành cho người khuyết tật thần kinh tâm thần tại Trung tâm",
-			"dateIcon": "./assets/images/list-icon/schedule.png",
 			"date": "19/04/2023",
 			"description": "Sáng ngày 18/4/2023 tại Trung tâm Bảo trợ xã hội đã tổ chức Hội thao chào mừng kỷ niệm 25 năm Ngày người khuyết tật Việt nam (18/4/1998 -18/4/2023) dành cho người khuyết tật thần kinh tâm thần tại Trung tâm. Nhằm trợ giúp xã hội và phục hồi chức năng, rèn luyện một số kỹ năng giao tiếp, kỹ năng sống, các hoạt động văn hóa văn nghệ, thể dục, thể thao, vui chơi giải trí, rèn luyện sức khỏe thể chất, tạo tinh thần lạc quan, phấn khởi cho người khuyết tật thần kinh tâm thần tại Trung tâm."
 		},
@@ -16,17 +16,14 @@
 			"featured": false,
 			"image": "../home/assets/images/list-article/img_2.png",
 			"title": "Trung tâm Bảo trợ xã hội tổ chức chương trình gặp mặt người khuyết tật thần kinh tâm thần nhân 113 năm Ngày Quốc tế phụ nữ (8/3/1910 -8/3/2023)",
-			"dateIcon": "./assets/images/list-icon/schedule.png",
 			"date": "09/03/2023",
 			"description": "Ngày 18/12/2022 ông Ngô Duy Bình - Chủ tịch Hội Cựu chiến binh Sở Lao động - Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đại diện cho Hội Cựu chiến binh Sở Lao động - Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đến thăm và tặng quà cho các cháu nhỏ mồ côi tại Trung tâm Công tác xã hội và Qũy bảo trợ trẻ em Thừa Thiên Huế. Đây là một trong những hoạt động thường xuyên của Hội với các cháu đang được chăm sóc, nuôi dưỡng tại đây với tinh thần tương thân tương ái, thấu hiểu, cảm thông và giúp đỡ những hoàn cảnh khó khăn, bất hạnh trong cuộc sống."
 		},
 		{
 			"id": 3,
 			"featured": false,
-
 			"image": "../home/assets/images/list-article/img_3.png",
 			"title": "Trung tâm Bảo trợ xã hội tổ chức gặp mặt viên chức và người lao động Phòng Y tế phục hồi chức năng nhân Ngày thầy thuốc Việt Nam 27/2",
-			"dateIcon": "./assets/images/list-icon/schedule.png",
 			"date": "28/02/2023",
 			"description": "Ngày 18/12/2022 ông Ngô Duy Bình - Chủ tịch Hội Cựu chiến binh Sở Lao động - Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đại diện cho Hội Cựu chiến binh Sở Lao động - Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đến thăm và tặng quà cho các cháu nhỏ mồ côi tại Trung tâm Công tác xã hội và Qũy bảo trợ trẻ em Thừa Thiên Huế. Đây là một trong những hoạt động thường xuyên của Hội với các cháu đang được chăm sóc, nuôi dưỡng tại đây với tinh thần tương thân tương ái, thấu hiểu, cảm thông và giúp đỡ những hoàn cảnh khó khăn, bất hạnh trong cuộc sống."
 		},
@@ -35,7 +32,6 @@
 			"featured": false,
 			"image": "../home/assets/images/list-article/img_4.png",
 			"title": "Lễ ra mắt Câu lạc bộ Văn thể mỹ cho người khuyết tật thần kinh tâm thần tại Trung tâm Bảo trợ xã hội",
-			"dateIcon": "./assets/images/list-icon/schedule.png",
 			"date": "08/02/2022",
 			"description": "Ngày 18/12/2022 ông Ngô Duy Bình - Chủ tịch Hội Cựu chiến binh Sở Lao động - Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đại diện cho Hội Cựu chiến binh Sở Lao động - Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đến thăm và tặng quà cho các cháu nhỏ mồ côi tại Trung tâm Công tác xã hội và Qũy bảo trợ trẻ em Thừa Thiên Huế. Đây là một trong những hoạt động thường xuyên của Hội với các cháu đang được chăm sóc, nuôi dưỡng tại đây với tinh thần tương thân tương ái, thấu hiểu, cảm thông và giúp đỡ những hoàn cảnh khó khăn, bất hạnh trong cuộc sống."
 		}
