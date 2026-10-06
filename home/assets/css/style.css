@@ -649,6 +649,22 @@ body > .container {
 	gap: 24px;
 }
 
+.image-library-list:has(.image-library-track) {
+	display: block;
+	overflow: hidden;
+}
+
+.image-library-track {
+	display: flex;
+	gap: 24px;
+	transition: transform 0.5s ease;
+}
+
+.image-library-track .image-library-item {
+	flex: 0 0 calc((100% - 72px) / 4);
+	min-width: 0;
+}
+
 .image-library-thumb {
 	display: block;
 	width: 100%;
