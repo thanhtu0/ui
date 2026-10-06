@@ -5,6 +5,7 @@ import { loadContact } from './contact.js';
 import { loadSearchPeople } from './missing-relatives.js';
 import { loadArticles } from './articles.js';
 import { loadActivities } from './activities.js';
+import { loadRelatedSections } from './related-section.js';
 
 loadWebsiteLinks();
 loadSponsors();
@@ -13,3 +14,4 @@ loadContact();
 loadSearchPeople();
 loadArticles();
 loadActivities();
+loadRelatedSections();

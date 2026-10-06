@@ -7,18 +7,22 @@
 			"articles": [
 				{
 					"title": "Trung tâm Bảo trợ xã hội tổ chức chương trình Vui tết trung thu cho người khuyết tật thần kinh tâm thần đang được nuôi dưỡng tại trung tâm",
+					"link": "#",
 					"image": "./assets/images/list_news/img_1.png",
 					"date": "10/09/2022",
 					"description": "Tết Trung thu được biết đến như một ngày Tết của tình thân, của sự yêu thương và sum vầy. Vào ngày này, mọi người sẽ trao nhau những món quà, ở bên gia đình và tổ chức những buổi tiệc nhỏ ấm cúng. Đặc biệt, Trung thu còn là dịp để ngọn lửa nhân văn với tình người ấm áp, yêu thương bừng sáng và lan tỏa mạnh mẽ trong cộng đồng."
 				},
 				{
 					"title": "Ngân hàng Đầu tư và phát triển Việt Nam BIDV chi nhánh Thừa Thiên Huế tặng quà tại Trung tâm Bảo trợ xã hội tỉnh Thừa Thiên Huế",
+					"link": "#",
+
 					"image": "",
 					"date": "07/09/2021",
 					"description": ""
 				},
 				{
 					"title": "Tổ chức DOVE Fund tài trợ chương trình cải thiện đời sống, tinh thần cho bệnh nhân tâm thần ở trung tâm Bảo trợ Xã hội Thừa Thiên Huế",
+					"link": "#",
 					"image": "",
 					"date": "05/03/2021",
 					"description": ""
@@ -32,18 +36,21 @@
 			"articles": [
 				{
 					"title": "Hoạt động Kỷ niệm 78 năm ngày thành lập Quân đội nhân dân Việt Nam (22/12/1944 - 22/12/2022) của Hội cựu chiến binh Sở Lao động - Thương binh và Xã hội tỉnh Thừa Thiên Huế",
+					"link": "#",
 					"image": "./assets/images/list_news/img_2.png",
 					"date": "21/12/2022",
 					"description": "Ngày 18/12/2022 ông Ngô Duy Bình - Chủ tịch Hội Cựu chiến binh Sở Lao động - Thương binh và Xã hội tỉnh Thừa Thiên Huế đã đại diện cho Hội đến thăm và tặng quà cho các cháu nhỏ mồ côi tại Trung tâm Công tác xã hội và Quỹ bảo trợ trẻ em Thừa Thiên Huế."
 				},
 				{
 					"title": "Trung tâm Bảo trợ xã hội tổ chức gặp mặt người khuyết tật thần kinh tâm thần cao tuổi đang được chăm sóc nuôi dưỡng tại trung tâm với chủ đề \"Chung tay chăm sóc người cao tuổi có hoàn cảnh khó khăn\".",
+					"link": "#",
 					"image": "",
 					"date": "07/10/2022",
 					"description": ""
 				},
 				{
 					"title": "Trung tâm Bảo trợ xã hội phối hợp với Trung tâm Ứng dụng tiến bộ khoa học và công nghệ thực hiện chuyển giao công nghệ trồng trọt và chăn nuôi tại trung tâm",
+					"link": "#",
 					"image": "",
 					"date": "10/01/2022",
 					"description": ""
