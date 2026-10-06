@@ -6,6 +6,7 @@ import { loadSearchPeople } from './missing-relatives.js';
 import { loadArticles } from './articles.js';
 import { loadActivities } from './activities.js';
 import { loadRelatedSections } from './related-section.js';
+import { loadMainNav } from './navbar.js';
 
 loadWebsiteLinks();
 loadSponsors();
@@ -15,3 +16,4 @@ loadSearchPeople();
 loadArticles();
 loadActivities();
 loadRelatedSections();
+loadMainNav();

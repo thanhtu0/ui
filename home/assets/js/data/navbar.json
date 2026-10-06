@@ -1,0 +1,36 @@
+{
+	"items": [
+		{
+			"label": "TRANG CHỦ",
+			"link": "../home/index.html"
+		},
+		{
+			"label": "GIỚI THIỆU",
+			"link": "#"
+		},
+		{
+			"label": "TIN TỨC - SỰ KIỆN",
+			"link": "../news/index.html"
+		},
+		{
+			"label": "TÌM THÂN NHÂN",
+			"link": "#"
+		},
+		{
+			"label": "HOẠT ĐỘNG ĐOÀN THỂ",
+			"link": "#"
+		},
+		{
+			"label": "HOẠT ĐỘNG TÀI TRỢ",
+			"link": "#"
+		},
+		{
+			"label": "VĂN BẢN - THỐNG KÊ",
+			"link": "#"
+		},
+		{
+			"label": "THƯ VIỆN MEDIA",
+			"link": "#"
+		}
+	]
+}
