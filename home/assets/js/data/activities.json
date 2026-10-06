@@ -56,7 +56,7 @@
 			"id": 4,
 			"category": "chi-bo",
 			"title": "Chi bộ Trung tâm Bảo trợ xã hội tổ chức lễ kết nạp Đảng viên mới",
-			"image": "./assets/images/list_activity/img_4.png",
+			"image": "./assets/images/list_activity/img_4.jpg",
 			"date": "27/01/2025",
 			"link": "#"
 		},
@@ -64,7 +64,7 @@
 			"id": 5,
 			"category": "chi-bo",
 			"title": "Tổ chức thành công Đại hội điểm chi bộ Trung tâm Bảo trợ xã hội, Đảng bộ Sở Lao động - Thương binh và Xã hội",
-			"image": "./assets/images/list_activity/img_5.png",
+			"image": "./assets/images/list_activity/img_5.jpg",
 			"date": "06/01/2025",
 			"link": "#"
 		},
@@ -72,7 +72,7 @@
 			"id": 6,
 			"category": "chi-bo",
 			"title": "Chi bộ Trung tâm Bảo trợ xã hội tổ chức lễ dâng hương tưởng niệm ghi nhớ công ơn Chủ tịch Hồ Chí Minh tại Bảo tàng Hồ Chí Minh - Thừa Thiên Huế",
-			"image": "./assets/images/list_activity/img_6.png",
+			"image": "./assets/images/list_activity/img_6.jpg",
 			"date": "10/06/2024",
 			"link": "#"
 		},
@@ -80,7 +80,7 @@
 			"id": 7,
 			"category": "chi-bo",
 			"title": "Chi bộ Trung tâm Bảo trợ xã hội tổ chức Lễ kết nạp Đảng viên mới",
-			"image": "./assets/images/list_activity/img_7.png",
+			"image": "./assets/images/list_activity/img_7.jpg",
 			"date": "27/01/2025",
 			"link": "#"
 		},
@@ -88,7 +88,7 @@
 			"id": 8,
 			"category": "doan-thanh-nien",
 			"title": "ĐẠI HỘI CHI ĐOÀN TNCS HỒ CHÍ MINH TRUNG TÂM BẢO TRỢ XÃ HỘI LẦN THỨ VII NHIỆM KỲ 2024-2027",
-			"image": "./assets/images/list_activity/img_8.png",
+			"image": "./assets/images/list_activity/img_8.jpg",
 			"date": "27/09/2024",
 			"link": "#"
 		},
@@ -96,7 +96,7 @@
 			"id": 9,
 			"category": "doan-thanh-nien",
 			"title": "Chi đoàn Trung tâm Bảo trợ xã hội tổ chức gặp mặt đoàn viên thanh niên Chi đoàn Trung tâm nhân kỷ niệm 92 năm ngày Thành lập Đoàn thanh niên cộng sản Hồ Chí Minh (26/3/1931 -26/3/2023)",
-			"image": "./assets/images/list_activity/img_9.png",
+			"image": "./assets/images/list_activity/img_9.jpg",
 			"date": "26/03/2023",
 			"link": "#"
 		},
@@ -104,7 +104,7 @@
 			"id": 10,
 			"category": "doan-thanh-nien",
 			"title": "Chi đoàn Trung tâm Bảo trợ xã hội tổ chức hoạt động 'Ngày chủ nhật xanh'",
-			"image": "./assets/images/list_activity/img_10.png",
+			"image": "./assets/images/list_activity/img_10.jpg",
 			"date": "01/12/2022",
 			"link": "#"
 		}

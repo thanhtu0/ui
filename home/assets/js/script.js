@@ -4,6 +4,7 @@ import { loadCtaCards } from './cta-cards.js';
 import { loadContact } from './contact.js';
 import { loadSearchPeople } from './missing-relatives.js';
 import { loadArticles } from './articles.js';
+import { loadActivities } from './activities.js';
 
 loadWebsiteLinks();
 loadSponsors();
@@ -11,3 +12,4 @@ loadCtaCards();
 loadContact();
 loadSearchPeople();
 loadArticles();
+loadActivities();
