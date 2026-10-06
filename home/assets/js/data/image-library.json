@@ -1,0 +1,34 @@
+{
+	"icon": "./assets/images/list-icon/perm_media.png",
+	"title": "THƯ VIỆN HÌNH ẢNH",
+	"items": [
+		{
+			"id": 1,
+			"title": "Hội thao chào mừng kỷ niệm 25 năm ngày Người khuyết tật Việt Nam",
+			"displayTitle": "Hội thao chào mừng kỷ niệm 25 năm ngày Người khuyết tật...",
+			"image": "./assets/images/gallery/img_1.png",
+			"link": "#"
+		},
+		{
+			"id": 2,
+			"title": "Lễ ra mắt Câu lạc bộ văn thể mỹ",
+			"displayTitle": "Lễ ra mắt Câu lạc bộ văn thể mỹ",
+			"image": "./assets/images/gallery/img_2.png",
+			"link": "#"
+		},
+		{
+			"id": 3,
+			"title": "Gặp mặt người khuyết tật thần kinh tâm thần nhân 113...",
+			"displayTitle": "Gặp mặt người khuyết tật thần kinh tâm thần nhân 113...",
+			"image": "./assets/images/gallery/img_3.png",
+			"link": "#"
+		},
+		{
+			"id": 4,
+			"title": "Chương trình “Vui tết Trung thu” cho Người khuyết tật",
+			"displayTitle": "Chương trình “Vui tết Trung thu” cho Người khuyết tật...",
+			"image": "./assets/images/gallery/img_4.png",
+			"link": "#"
+		}
+	]
+}

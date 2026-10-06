@@ -1,0 +1,33 @@
+{
+	"items": [
+		{
+			"id": "search-relatives",
+			"title": "DANH SÁCH ĐỐI TƯỢNG ĐANG TÌM THÂN NHÂN",
+			"icon": "./assets/images/list-banner/Frame.png",
+			"link": "#",
+			"theme": "pink"
+		},
+		{
+			"id": "no-relatives",
+			"title": "DANH SÁCH ĐỐI TƯỢNG ĐÃ MẤT KHÔNG CÓ TÌM THÂN NHÂN",
+			"icon": "./assets/images/list-banner/Frame.png",
+			"link": "#",
+			"theme": "pink"
+		},
+		{
+			"id": "legal-documents",
+			"title": "VĂN BẢN PHÁP LUẬT",
+			"icon": "./assets/images/list-banner/icon-vb.png",
+			"link": "#",
+			"theme": "pink",
+			"textColor": "#e74c55"
+		},
+		{
+			"id": "administrative-procedures",
+			"title": "THỦ TỤC HÀNH CHÍNH",
+			"icon": "./assets/images/list-banner/icon-thutuc.png",
+			"link": "#",
+			"theme": "blue"
+		}
+	]
+}

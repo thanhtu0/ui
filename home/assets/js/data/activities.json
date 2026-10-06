@@ -1,0 +1,112 @@
+{
+	"tabs": [
+		{
+			"id": "chi-bo",
+			"name": "Chi bộ",
+			"active": true
+		},
+		{
+			"id": "cong-doan",
+			"name": "Công đoàn",
+			"active": false
+		},
+		{
+			"id": "doan-thanh-nien",
+			"name": "Đoàn thanh niên",
+			"active": false
+		},
+		{
+			"id": "cuu-chien-binh",
+			"name": "Cựu chiến binh",
+			"active": false
+		},
+		{
+			"id": "nu-cong",
+			"name": "Nữ công",
+			"active": false
+		}
+	],
+
+	"activities": [
+		{
+			"id": 1,
+			"category": "chi-bo",
+			"title": "Chi bộ Trung tâm Bảo trợ xã hội tổ chức lễ kết nạp Đảng viên mới",
+			"image": "./assets/images/list_activity/img_1.png",
+			"date": "07/04/2023",
+			"link": "#"
+		},
+		{
+			"id": 2,
+			"category": "doan-thanh-nien",
+			"title": "Chi đoàn Trung tâm Bảo trợ xã hội tổ chức gặp mặt đoàn viên thanh niên nhân Chi đoàn Trung tâm kỷ niệm 92 năm ngày Thành...",
+			"image": "./assets/images/list_activity/img_2.png",
+			"date": "26/04/2023",
+			"link": "#"
+		},
+		{
+			"id": 3,
+			"category": "cuu-chien-binh",
+			"title": "Hội Cựu chiến binh Sở Lao động - Thương binh và Xã hội Thừa Thiên Huế tổ chức Hội nghị triển khai nhiệm vụ công tác Hội năm...",
+			"image": "./assets/images/list_activity/img_3.png",
+			"date": "13/12/2022",
+			"link": "#"
+		},
+		{
+			"id": 4,
+			"category": "chi-bo",
+			"title": "Chi bộ Trung tâm Bảo trợ xã hội tổ chức lễ kết nạp Đảng viên mới",
+			"image": "./assets/images/list_activity/img_4.png",
+			"date": "27/01/2025",
+			"link": "#"
+		},
+		{
+			"id": 5,
+			"category": "chi-bo",
+			"title": "Tổ chức thành công Đại hội điểm chi bộ Trung tâm Bảo trợ xã hội, Đảng bộ Sở Lao động - Thương binh và Xã hội",
+			"image": "./assets/images/list_activity/img_5.png",
+			"date": "06/01/2025",
+			"link": "#"
+		},
+		{
+			"id": 6,
+			"category": "chi-bo",
+			"title": "Chi bộ Trung tâm Bảo trợ xã hội tổ chức lễ dâng hương tưởng niệm ghi nhớ công ơn Chủ tịch Hồ Chí Minh tại Bảo tàng Hồ Chí Minh - Thừa Thiên Huế",
+			"image": "./assets/images/list_activity/img_6.png",
+			"date": "10/06/2024",
+			"link": "#"
+		},
+		{
+			"id": 7,
+			"category": "chi-bo",
+			"title": "Chi bộ Trung tâm Bảo trợ xã hội tổ chức Lễ kết nạp Đảng viên mới",
+			"image": "./assets/images/list_activity/img_7.png",
+			"date": "27/01/2025",
+			"link": "#"
+		},
+		{
+			"id": 8,
+			"category": "doan-thanh-nien",
+			"title": "ĐẠI HỘI CHI ĐOÀN TNCS HỒ CHÍ MINH TRUNG TÂM BẢO TRỢ XÃ HỘI LẦN THỨ VII NHIỆM KỲ 2024-2027",
+			"image": "./assets/images/list_activity/img_8.png",
+			"date": "27/09/2024",
+			"link": "#"
+		},
+		{
+			"id": 9,
+			"category": "doan-thanh-nien",
+			"title": "Chi đoàn Trung tâm Bảo trợ xã hội tổ chức gặp mặt đoàn viên thanh niên Chi đoàn Trung tâm nhân kỷ niệm 92 năm ngày Thành lập Đoàn thanh niên cộng sản Hồ Chí Minh (26/3/1931 -26/3/2023)",
+			"image": "./assets/images/list_activity/img_9.png",
+			"date": "26/03/2023",
+			"link": "#"
+		},
+		{
+			"id": 10,
+			"category": "doan-thanh-nien",
+			"title": "Chi đoàn Trung tâm Bảo trợ xã hội tổ chức hoạt động 'Ngày chủ nhật xanh'",
+			"image": "./assets/images/list_activity/img_10.png",
+			"date": "01/12/2022",
+			"link": "#"
+		}
+	]
+}

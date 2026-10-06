@@ -1,0 +1,25 @@
+{
+	"items": [
+		{
+			"id": 1,
+			"name": "Nguyễn Văn A",
+			"image": "./assets/images/list-search-people/img_1.png",
+			"description": "Thông tin mô tả; thời gian tiếp nhận; Đặc điểm nhận dạng v.v...",
+			"link": "#"
+		},
+		{
+			"id": 2,
+			"name": "Nguyễn Văn B",
+			"image": "./assets/images/list-search-people/img_2.png",
+			"description": "Thông tin mô tả; thời gian tiếp nhận; Đặc điểm nhận dạng v.v...",
+			"link": "#"
+		},
+		{
+			"id": 3,
+			"name": "Trần Văn A",
+			"image": "./assets/images/list-search-people/img_3.png",
+			"description": "Thông tin mô tả; thời gian tiếp nhận; Đặc điểm nhận dạng v.v...",
+			"link": "#"
+		}
+	]
+}

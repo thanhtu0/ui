@@ -1,0 +1,40 @@
+{
+	"items": [
+		{
+			"id": 1,
+			"name": "Chùa Tường Vân Huế",
+			"image": "./assets/images/list-sponsor/img_1.png",
+			"link": "#"
+		},
+		{
+			"id": 2,
+			"name": "Sở Ngoại vụ Thừa Thiên Huế",
+			"image": "./assets/images/list-sponsor/img_2.png",
+			"link": "#"
+		},
+		{
+			"id": 3,
+			"name": "Trung tâm hỗ trợ Nhân đạo và Thiết bị trường học Huế",
+			"image": "./assets/images/list-sponsor/img_3.png",
+			"link": "#"
+		},
+		{
+			"id": 4,
+			"name": "Công ty TNHH Thiên Hương Huế",
+			"image": "./assets/images/list-sponsor/img_4.png",
+			"link": "#"
+		},
+		{
+			"id": 5,
+			"name": "Quỹ những trái tim Huế",
+			"image": "./assets/images/list-sponsor/img_5.png",
+			"link": "#"
+		},
+		{
+			"id": 6,
+			"name": "Quỹ Dove Fund Mỹ",
+			"image": "./assets/images/list-sponsor/img_6.png",
+			"link": "#"
+		}
+	]
+}
