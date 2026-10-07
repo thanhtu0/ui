@@ -9,8 +9,14 @@ export async function loadSearchPeople() {
 
 	list.innerHTML = data.items
 		.map(
-			(item) => `
-				<div class="mini-post">
+			(item, index) => `
+				<div
+					class="mini-post"
+					data-aos="fade-up"
+					data-aos-duration="1000"
+					data-aos-delay="${index * 150}"
+					data-aos-once="true">
+					
 					<img
 						src="${item.image}"
 						alt="${item.name}"
@@ -31,4 +37,6 @@ export async function loadSearchPeople() {
 			`,
 		)
 		.join('');
+
+	AOS.refreshHard();
 }

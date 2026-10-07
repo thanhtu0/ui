@@ -5,7 +5,10 @@ export async function loadArticles() {
 	const articleList = document.querySelector('#article-list');
 
 	articleList.innerHTML = `
-		<div class="section-title">
+		<div class="section-title" 
+		data-aos="fade-right" 
+		data-aos-duration="1000"    
+		data-aos-once="true">
 			<div class="section-title-content has-accent align-center">
 				<span class="icon-title flex-center">
 					<img
@@ -20,7 +23,10 @@ export async function loadArticles() {
 		${data.articles
 			.map(
 				(article) => `
-					<article class="article-item ${article.featured ? 'featured' : ''}">
+					<article class="article-item ${article.featured ? 'featured' : ''}"
+					data-aos="${article.featured ? 'fade-right' : 'fade-left'}" 
+					data-aos-duration="1000"
+					data-aos-once="true">
 						<a
 							href="${article.link || '#'}"
 							class="thumb-link">

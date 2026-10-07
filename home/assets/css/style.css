@@ -329,6 +329,7 @@ body > .container {
 /* REUSE BANNER */
 
 .announcement {
+	margin-top: 12px;
 	width: 100%;
 	padding: 16px 24px;
 	background: var(--color-surface);
@@ -353,7 +354,7 @@ body > .container {
 	display: inline-block;
 	color: var(--color-text-primary);
 	white-space: nowrap;
-	animation: announcement-scroll 20s linear infinite;
+	animation: announcement-scroll 12s linear infinite;
 }
 
 .announcement-link:hover {
@@ -594,7 +595,7 @@ body > .container {
 }
 
 .activities-item-title {
-	margin: 16px 0 0 0;
+	margin: 16px 0 16px 0;
 }
 
 .activities-item-title a:hover {
