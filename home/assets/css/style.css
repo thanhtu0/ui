@@ -952,10 +952,22 @@ body > .container {
 	border-top: 8px solid var(--color-accent);
 }
 
+#video-list {
+	min-height: 220px;
+}
+
 .video-item {
-	display: block;
+	display: none;
 	margin-top: 16px;
 }
+
+.video-item.active {
+	display: block;
+}
+
+/* =========================
+   Video Thumbnail
+   ========================= */
 
 .video-thumbnail {
 	position: relative;
@@ -964,36 +976,128 @@ body > .container {
 	aspect-ratio: 286 / 144;
 	overflow: hidden;
 	border-radius: 16px;
+	cursor: pointer;
 }
 
+/* Thumbnail image */
 .video-thumbnail > img {
 	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+
+	transition:
+		opacity 0.25s ease,
+		transform 0.3s ease;
 }
+
+/* Dark overlay */
+.video-thumbnail::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+
+	background: rgba(0, 0, 0, 0);
+
+	pointer-events: none;
+
+	transition: background-color 0.25s ease;
+}
+
+/* =========================
+   Play Button
+   ========================= */
 
 .play-button {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	z-index: 2;
 
 	width: 40px;
 	height: 40px;
 
-	background: var(--color-secondary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 0;
+	border: 0;
 	border-radius: 50%;
+
+	background: var(--color-secondary);
+
+	opacity: 0.9;
+
+	transform: translate(-50%, -50%);
+
+	transition:
+		transform 0.25s ease,
+		opacity 0.25s ease,
+		background-color 0.25s ease,
+		box-shadow 0.25s ease;
 }
 
 .play-button img {
 	display: block;
+	width: 48px;
+	height: 48px;
 	object-fit: contain;
+}
+
+.video-thumbnail:hover > img {
+	opacity: 0.65;
+	transform: scale(1.05);
+}
+
+.video-thumbnail:hover::after {
+	background: rgba(0, 0, 0, 0.15);
+}
+
+.video-thumbnail:hover .play-button {
+	opacity: 1;
+	transform: translate(-50%, -50%) scale(1.12);
+	background-color: var(--color-accent);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.video-thumbnail:active .play-button {
+	transform: translate(-50%, -50%) scale(0.98);
 }
 
 .video-item h4 {
 	margin: 8px 0 0;
 	color: var(--color-link);
+}
+
+.video-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.video-dot {
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background-color: var(--color-border);
+	cursor: pointer;
+	transition:
+		width 0.2s ease,
+		background-color 0.2s ease,
+		transform 0.2s ease;
+}
+
+.video-dot.active {
+	background-color: var(--color-accent);
+}
+
+.video-dot:hover {
+	background-color: var(--color-secondary);
+	transform: scale(1.15);
 }
 
 .widget-heading-text {

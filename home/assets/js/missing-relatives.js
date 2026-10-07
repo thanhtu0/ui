@@ -13,9 +13,7 @@ export async function loadSearchPeople() {
 				<div
 					class="mini-post"
 					data-aos="fade-up"
-					data-aos-duration="1000"
-					data-aos-delay="${index * 150}"
-					data-aos-once="true">
+					data-aos-delay="${index * 150}">
 					
 					<img
 						src="${item.image}"

@@ -12,9 +12,7 @@ export async function loadRelatedSections() {
 				<section class="related-section">
 					<div
 						class="section-title"
-						data-aos="${isReverse ? 'fade-left' : 'fade-right'}"
-						data-aos-duration="1000"
-						data-aos-once="true">
+						data-aos="${isReverse ? 'fade-left' : 'fade-right'}">
 
 						<div class="section-title-content align-center">
 							<span class="icon-title flex-center">
@@ -38,9 +36,7 @@ export async function loadRelatedSections() {
 								return `
 										<article
 											class="related-article"
-											data-aos="${articleFromRight ? 'fade-left' : 'fade-right'}"
-											data-aos-duration="1000"
-											data-aos-once="true">
+											data-aos="${articleFromRight ? 'fade-left' : 'fade-right'}">
 
 											${
 												article.image
