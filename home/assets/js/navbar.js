@@ -6,9 +6,21 @@ export async function loadMainNav() {
 
 	const currentPath = window.location.pathname;
 
+	function normalizePath(path) {
+		return path.replace(/\/index\.html$/, '/').replace(/\/$/, '');
+	}
+
+	const normalizedCurrentPath = normalizePath(currentPath);
+
 	navList.innerHTML = data.items
 		.map((item) => {
-			const isActive = currentPath.endsWith(item.link);
+			let isActive = false;
+
+			if (item.link !== '#') {
+				const itemUrl = new URL(item.link, window.location.href);
+				const normalizedItemPath = normalizePath(itemUrl.pathname);
+				isActive = normalizedCurrentPath === normalizedItemPath;
+			}
 
 			return `
 				<li class="nav-item">
