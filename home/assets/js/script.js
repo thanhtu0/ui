@@ -8,6 +8,7 @@ import { loadActivities } from './activities.js';
 import { loadRelatedSections } from './related-section.js';
 import { loadMainNav } from './navbar.js';
 import { loadImageLibrary } from './image-library.js';
+import { loadVideoLibrary } from './video-library.js';
 
 loadWebsiteLinks();
 loadSponsors();
@@ -19,3 +20,4 @@ loadActivities();
 loadRelatedSections();
 loadMainNav();
 loadImageLibrary();
+loadVideoLibrary();
