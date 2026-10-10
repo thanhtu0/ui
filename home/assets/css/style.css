@@ -1,8 +1,6 @@
 @font-face {
 	font-family: 'Public Sans';
-	src:
-		url('../fonts/PublicSans/PublicSans-VariableFont_wght.ttf') format('truetype-variations'),
-		url('../fonts/PublicSans/PublicSans-VariableFont_wght.ttf') format('truetype');
+	src: url('../fonts/PublicSans/PublicSans-VariableFont_wght.ttf') format('truetype');
 	font-weight: 400 900;
 	font-style: normal;
 	font-display: swap;
@@ -10,9 +8,7 @@
 
 @font-face {
 	font-family: 'Public Sans';
-	src:
-		url('../fonts/PublicSans/PublicSans-Italic-VariableFont_wght.ttf') format('truetype-variations'),
-		url('../fonts/PublicSans/PublicSans-Italic-VariableFont_wght.ttf') format('truetype');
+	src: url('../fonts/PublicSans/PublicSans-Italic-VariableFont_wght.ttf') format('truetype');
 	font-weight: 400 900;
 	font-style: italic;
 	font-display: swap;
@@ -114,28 +110,31 @@ iframe {
 }
 
 .text-title {
-	font-size: clamp(16px, 1.2rem + 0.5vw, 20px);
-	line-height: 1.3;
 	font-weight: 700;
+	font-size: clamp(16px, 1rem + 0.5vw, 20px);
+	line-height: 1.3;
+	letter-spacing: 0.15px;
 }
 
 .text-subtitle {
 	font-weight: 600;
-	font-size: clamp(14px, 1rem + 0.2vw, 16px);
+	font-size: clamp(13px, 0.85rem + 0.25vw, 16px);
 	line-height: 1.4;
+	letter-spacing: 0.15px;
 }
 
 .text-desc {
 	font-weight: 400;
-	font-size: clamp(13px, 0.95rem + 0.1vw, 15px);
+	font-size: clamp(12px, 0.8rem + 0.2vw, 16px);
 	line-height: 1.5;
+	letter-spacing: 0.25px;
 }
 
 .text-button {
 	font-weight: 600;
-	font-size: 14px;
+	font-size: clamp(12px, 0.8rem + 0.2vw, 14px);
 	line-height: 20px;
-	letter-spacing: 1.25px;
+	letter-spacing: 0.5px;
 	border-radius: 24px;
 	color: var(--color-text-secondary);
 }
@@ -143,8 +142,8 @@ iframe {
 .text-sm-desc {
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 20px;
-	letter-spacing: 0.25px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
 }
 /* Utility Class */
 
@@ -176,10 +175,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
 	height: 88px;
-	max-width: 1408px;
-	margin: 0 auto;
 }
 
 .logo {
@@ -263,12 +259,6 @@ header {
 	border-bottom: 1px solid #e1e5ec;
 }
 
-.main-nav {
-	width: 100%;
-	max-width: 1408px;
-	padding: 0 24px;
-}
-
 .main-nav,
 .nav-list,
 .nav-item,
@@ -314,27 +304,16 @@ header {
 	color: var(--color-link);
 }
 
-.main-content {
-	width: 100%;
-	max-width: 1408px;
-	margin: 0 auto;
-	padding: 0 24px;
-}
-
 .content {
-	display: flex;
-	align-items: flex-start;
+	display: grid;
+	grid-template-columns: minmax(0, 1050fr) minmax(0, 335fr);
+	align-items: start;
 	gap: 24px;
 }
 
-.left-content {
-	flex: 1;
-	min-width: 0;
-}
-
+.left-content,
 .sidebar {
-	width: 335px;
-	flex-shrink: 0;
+	min-width: 0;
 }
 
 /* REUSE BANNER */
@@ -554,7 +533,7 @@ header {
 
 .activities-nav a {
 	position: relative;
-	color: var(--color-text);
+	color: var(--color-text-primary);
 }
 
 .activities-nav a::after {
@@ -985,10 +964,6 @@ header {
 	display: block;
 }
 
-/* =========================
-   Video Thumbnail
-   ========================= */
-
 .video-thumbnail {
 	position: relative;
 	width: 100%;
@@ -999,7 +974,6 @@ header {
 	cursor: pointer;
 }
 
-/* Thumbnail image */
 .video-thumbnail > img {
 	display: block;
 	width: 100%;
@@ -1011,7 +985,6 @@ header {
 		transform 0.3s ease;
 }
 
-/* Dark overlay */
 .video-thumbnail::after {
 	content: '';
 	position: absolute;
@@ -1023,10 +996,6 @@ header {
 
 	transition: background-color 0.25s ease;
 }
-
-/* =========================
-   Play Button
-   ========================= */
 
 .play-button {
 	position: absolute;
@@ -1148,10 +1117,7 @@ footer {
 }
 
 .footer-container {
-	max-width: 1408px;
-	margin: 0 auto;
 	min-height: 162px;
-	padding: 0 24px;
 }
 
 .left-footer {
@@ -1160,7 +1126,6 @@ footer {
 
 .info-item {
 	padding: 3px 0;
-	/* color: #ededed; */
 }
 
 .right-footer {
@@ -1253,7 +1218,7 @@ footer {
 	position: relative;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1280px) {
 	.top-header {
 		gap: clamp(10px, 2vw, 20px);
 		padding-inline: clamp(12px, 2.5vw, 24px);
@@ -1485,12 +1450,6 @@ footer {
 
 	.nav-toggle-label {
 		display: none;
-	}
-
-	.nav-toggle {
-		inline-size: 44px;
-		min-inline-size: 44px;
-		padding: 8px;
 	}
 }
 
