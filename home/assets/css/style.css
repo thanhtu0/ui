@@ -521,19 +521,40 @@ header {
 
 .activities-header {
 	position: relative;
-	height: 40px;
-
+	min-height: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 16px;
 	border-bottom: 1px solid var(--color-border);
 }
 
 .activities-nav {
-	height: 40px;
+	display: flex;
+	align-items: center;
 	gap: 16px;
+	height: 40px;
 	white-space: nowrap;
-	overflow: hidden;
+}
+
+.activities-menu-toggle {
+	display: none;
+	flex: 0 0 40px;
+	width: 40px;
+	height: 40px;
+	padding: 9px;
+	border: 1px solid var(--color-border);
+	border-radius: 6px;
+	background: transparent;
+	cursor: pointer;
+}
+
+.activities-menu-toggle span {
+	display: block;
+	width: 20px;
+	height: 2px;
+	margin: 4px 0;
+	background: var(--color-text-primary);
 }
 
 .activities-nav a {
@@ -583,11 +604,10 @@ header {
 }
 
 .activities-thumb {
+	display: block;
 	width: 100%;
-	max-width: 334px;
 	aspect-ratio: 334 / 200;
 
-	display: block;
 	overflow: hidden;
 	border-radius: 8px;
 }
@@ -1573,5 +1593,90 @@ footer {
 
 	.article-item:not(.featured) .article-desc {
 		display: none;
+	}
+}
+
+@media (max-width: 756px) {
+	.activities-header {
+		height: auto;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 8px;
+		padding-bottom: 8px;
+	}
+
+	.activities-nav {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 16px;
+
+		width: 100%;
+		min-width: 0;
+		height: 40px;
+
+		white-space: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden;
+		scrollbar-width: thin;
+	}
+
+	.activities-nav a {
+		flex: 0 0 auto;
+	}
+
+	.activities-item {
+		flex-basis: calc((100% - 24px) / 2);
+	}
+}
+
+@media (max-width: 500px) {
+	.activities-header {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.activities-header .section-title-content {
+		flex: 1 1 0;
+		min-width: 0;
+	}
+
+	.activities-header .text-title {
+		font-size: clamp(14px, 4.2vw, 19px);
+	}
+
+	.activities-menu-toggle {
+		display: block;
+	}
+
+	.activities-nav {
+		display: none;
+		flex: 0 0 100%;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+		width: 100%;
+		height: auto;
+		white-space: normal;
+		overflow: visible;
+	}
+
+	.activities-header.menu-open .activities-nav {
+		display: flex;
+	}
+
+	.activities-nav a {
+		display: block;
+		padding: 10px 4px;
+		border-top: 1px solid var(--color-border);
+	}
+
+	.activities-nav a::after {
+		bottom: 0;
+	}
+
+	.activities-item {
+		flex-basis: 100%;
 	}
 }
