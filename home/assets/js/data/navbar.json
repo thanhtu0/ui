@@ -2,7 +2,7 @@
 	"items": [
 		{
 			"label": "TRANG CHỦ",
-			"link": "../home/index.html"
+			"link": "./index.html"
 		},
 		{
 			"label": "GIỚI THIỆU",
