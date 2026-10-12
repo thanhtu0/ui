@@ -515,7 +515,7 @@ header {
 }
 
 .activities {
-	padding-bottom: 60px;
+	padding-bottom: clamp(24px, 4vw, 60px);
 	background: var(--color-secondary);
 }
 
@@ -1673,6 +1673,26 @@ footer {
 
 	.activities-item {
 		flex-basis: 100%;
+	}
+}
+
+@media (max-width: 340px) {
+	.activities-header .icon-title {
+		width: 24px;
+		height: 24px;
+	}
+
+	.activities-menu-toggle {
+		flex: 0 0 36px;
+		width: 36px;
+		height: 36px;
+		padding: 7px;
+	}
+}
+
+@media (max-width: 290px) {
+	.activities-header .text-title {
+		font-size: 13px;
 	}
 }
 
