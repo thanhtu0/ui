@@ -1,102 +1,132 @@
+let imageLibraryTimer = null;
+let imageLibraryResizeTimer = null;
+let imageLibraryResetTimer = null;
+
+function getImageLibraryVisibleItems() {
+	if (window.matchMedia('(max-width: 500px)').matches) {
+		return 2;
+	}
+
+	if (window.matchMedia('(max-width: 756px)').matches) {
+		return 3;
+	}
+
+	return 4;
+}
+
 export async function loadImageLibrary() {
-	const response = await fetch('./assets/js/data/image-library.json');
-
-	const data = await response.json();
-
 	const container = document.querySelector('#image-library');
+	if (!container) return;
 
-	const renderItem = (item) => `
-		<article class="image-library-item">
-			<a
-				href="${item.link}"
-				class="image-library-thumb">
-				<img
-					src="${item.image}"
-					alt="${item.title}" />
-			</a>
+	try {
+		const response = await fetch('./assets/js/data/image-library.json');
+		if (!response.ok) {
+			throw new Error('Không thể tải dữ liệu image-library');
+		}
 
-			<h3 class="image-library-item-title text-subtitle line-clamp">
-				<a href="${item.link}">
-					${item.title}
-				</a>
-			</h3>
-		</article>
-	`;
+		const data = await response.json();
 
-	const items = data.items.map(renderItem).join('');
+		const renderItem = (item) => `
+            <article class="image-library-item">
+                <a
+                    href="${item.link || '#'}"
+                    class="image-library-thumb">
+                    <img
+                        src="${item.image}"
+                        alt="${item.title || ''}" />
+                </a>
 
-	container.innerHTML = `
-		<div class="section-title">
-			<div class="section-title-content has-accent align-center">
-				<span class="icon-title flex-center">
-					<img
-						src="${data.icon}"
-						alt="" />
-				</span>
+                <h3 class="image-library-item-title text-subtitle line-clamp">
+                    <a href="${item.link || '#'}">
+                        ${item.title || ''}
+                    </a>
+                </h3>
+            </article>
+        `;
 
-				<h2 class="text-title">
-					${data.title}
-				</h2>
-			</div>
-		</div>
+		const itemsHTML = (data.items || []).map(renderItem).join('');
 
-		<div class="image-library-list">
-			${items}
-		</div>
-	`;
+		container.innerHTML = `
+            <div class="section-title">
+                <div class="section-title-content has-accent align-center">
+                    <span class="icon-title flex-center">
+                        <img
+                            src="${data.icon || ''}"
+                            alt="" />
+                    </span>
 
-	if (data.items.length > 4) {
-		const clonedItems = data.items.slice(0, 4).map(renderItem).join('');
+                    <h2 class="text-title">
+                        ${data.title || ''}
+                    </h2>
+                </div>
+            </div>
 
-		const list = container.querySelector('.image-library-list');
-
-		list.innerHTML = `
-			<div
-				class="image-library-track"
-				id="image-library-track">
-
-				${items}
-				${clonedItems}
-
-			</div>
-		`;
+            <div class="image-library-list">
+                <div class="image-library-track" id="image-library-track">
+                    ${itemsHTML}
+                </div>
+            </div>
+        `;
 
 		startImageLibrarySlider();
+	} catch (error) {
+		console.error('Lỗi tải image-library:', error);
 	}
 }
 
-let imageLibraryTimer;
-
 function startImageLibrarySlider() {
 	clearInterval(imageLibraryTimer);
+	clearTimeout(imageLibraryResetTimer);
 
+	const container = document.querySelector('#image-library .image-library-list');
 	const track = document.querySelector('#image-library-track');
+	if (!container || !track) return;
 
-	if (!track) return;
+	track.querySelectorAll('.is-clone').forEach((clone) => clone.remove());
 
-	const items = track.querySelectorAll('.image-library-item');
+	const originalItems = Array.from(track.children);
+	const originalCount = originalItems.length;
+	if (originalCount === 0) return;
 
-	if (items.length <= 4) {
+	const visibleItems = getImageLibraryVisibleItems();
+
+	if (originalCount <= visibleItems) {
+		track.style.transform = 'translateX(0)';
 		return;
 	}
 
 	let currentIndex = 0;
+	track.style.transition = 'none';
+	track.style.transform = 'translateX(0)';
+
+	originalItems.slice(0, visibleItems).forEach((item) => {
+		const clone = item.cloneNode(true);
+		clone.classList.add('is-clone');
+		track.appendChild(clone);
+	});
+
+	const allItems = track.querySelectorAll('.image-library-item');
+
+	requestAnimationFrame(() => {
+		track.style.transition = 'transform 0.5s ease';
+	});
+
+	// Lấy gap động từ CSS (nếu không có thì fallback về 24px)
+	function getItemWidth() {
+		const computedStyle = window.getComputedStyle(track);
+		const gap = parseFloat(computedStyle.gap || computedStyle.columnGap) || 24;
+		return allItems[0].getBoundingClientRect().width + gap;
+	}
 
 	function slideNext() {
 		currentIndex++;
+		track.style.transform = `translateX(-${currentIndex * getItemWidth()}px)`;
 
-		const itemWidth = items[0].offsetWidth + 24;
-
-		track.style.transform = `
-			translateX(-${currentIndex * itemWidth}px)
-		`;
-
-		if (currentIndex === items.length - 4) {
-			setTimeout(() => {
+		if (currentIndex === originalCount) {
+			// Gán vào biến reset timer để quản lý dứt điểm
+			imageLibraryResetTimer = setTimeout(() => {
 				track.style.transition = 'none';
-
 				currentIndex = 0;
-
 				track.style.transform = 'translateX(0)';
 
 				requestAnimationFrame(() => {
@@ -109,16 +139,21 @@ function startImageLibrarySlider() {
 	}
 
 	function startTimer() {
+		clearInterval(imageLibraryTimer);
 		imageLibraryTimer = setInterval(slideNext, 3000);
 	}
 
 	startTimer();
 
-	track.addEventListener('mouseenter', () => {
-		clearInterval(imageLibraryTimer);
-	});
-
-	track.addEventListener('mouseleave', () => {
-		startTimer();
-	});
+	track.addEventListener('mouseenter', () => clearInterval(imageLibraryTimer));
+	track.addEventListener('mouseleave', startTimer);
+	track.addEventListener('touchstart', () => clearInterval(imageLibraryTimer), { passive: true });
+	track.addEventListener('touchend', startTimer);
 }
+
+window.addEventListener('resize', () => {
+	clearTimeout(imageLibraryResizeTimer);
+	imageLibraryResizeTimer = setTimeout(() => {
+		startImageLibrarySlider();
+	}, 150);
+});

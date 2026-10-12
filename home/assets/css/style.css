@@ -1720,3 +1720,15 @@ footer {
 		padding: 12px;
 	}
 }
+
+@media (max-width: 756px) {
+	.image-library-track .image-library-item {
+		flex-basis: calc((100% - 48px) / 3);
+	}
+}
+
+@media (max-width: 500px) {
+	.image-library-track .image-library-item {
+		flex-basis: calc((100% - 24px) / 2);
+	}
+}
