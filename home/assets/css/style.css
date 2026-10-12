@@ -667,7 +667,6 @@ header {
 .related-article-image {
 	display: block;
 	width: 100%;
-	max-width: 465px;
 	aspect-ratio: 465 / 285;
 	margin-bottom: 16px;
 
@@ -1642,10 +1641,6 @@ footer {
 		min-width: 0;
 	}
 
-	.activities-header .text-title {
-		font-size: clamp(14px, 4.2vw, 19px);
-	}
-
 	.activities-menu-toggle {
 		display: block;
 	}
@@ -1678,5 +1673,50 @@ footer {
 
 	.activities-item {
 		flex-basis: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.related-sections {
+		gap: 12px;
+	}
+
+	.related-section {
+		padding: 12px;
+	}
+
+	.related-section .icon-title {
+		width: 24px;
+		height: 24px;
+	}
+
+	.related-article-image {
+		margin-bottom: 10px;
+		max-width: 100%;
+	}
+
+	.related-article-list {
+		margin-bottom: 10px;
+	}
+
+	.related-article .text-desc {
+		display: none;
+	}
+}
+
+@media (max-width: 576px) {
+	.related-sections {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 16px;
+	}
+
+	.related-section {
+		padding: 16px;
+	}
+}
+
+@media (max-width: 340px) {
+	.related-section {
+		padding: 12px;
 	}
 }
