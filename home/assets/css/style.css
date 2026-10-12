@@ -1728,7 +1728,21 @@ footer {
 }
 
 @media (max-width: 500px) {
+	.image-library {
+		padding: 16px;
+	}
+
 	.image-library-track .image-library-item {
 		flex-basis: calc((100% - 24px) / 2);
+	}
+}
+
+@media (max-width: 340px) {
+	.image-library {
+		padding: 12px;
+	}
+
+	.image-library-track .image-library-item {
+		flex-basis: 100%;
 	}
 }

@@ -3,6 +3,9 @@ let imageLibraryResizeTimer = null;
 let imageLibraryResetTimer = null;
 
 function getImageLibraryVisibleItems() {
+	if (window.matchMedia('(max-width: 340px)').matches) {
+		return 1;
+	}
 	if (window.matchMedia('(max-width: 500px)').matches) {
 		return 2;
 	}
@@ -111,7 +114,6 @@ function startImageLibrarySlider() {
 		track.style.transition = 'transform 0.5s ease';
 	});
 
-	// Lấy gap động từ CSS (nếu không có thì fallback về 24px)
 	function getItemWidth() {
 		const computedStyle = window.getComputedStyle(track);
 		const gap = parseFloat(computedStyle.gap || computedStyle.columnGap) || 24;
@@ -123,7 +125,6 @@ function startImageLibrarySlider() {
 		track.style.transform = `translateX(-${currentIndex * getItemWidth()}px)`;
 
 		if (currentIndex === originalCount) {
-			// Gán vào biến reset timer để quản lý dứt điểm
 			imageLibraryResetTimer = setTimeout(() => {
 				track.style.transition = 'none';
 				currentIndex = 0;
