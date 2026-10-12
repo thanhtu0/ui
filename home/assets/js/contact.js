@@ -95,30 +95,30 @@ function renderContactInfo(contact) {
 	`;
 }
 
-function renderFooterContact(contact) {
+export function renderFooterContact(contact) {
 	const container = document.querySelector('#footer-contact');
+	if (!container) return;
 
 	container.innerHTML = `
-		<h2 class="text-title">
-			${contact.name}
-		</h2>
+        <h2 class="text-title footer-title">
+            ${contact.name}
+        </h2>
 
-		<p class="info-item text-desc">
-			Địa chỉ: ${contact.address}
-		</p>
+        <p class="info-item text-desc">
+            Địa chỉ: ${contact.address}
+        </p>
 
-		<p class="info-item text-desc">
-			Số điện thoại: ${contact.phone}
-			&nbsp;&nbsp;&nbsp;&nbsp;
-			Di động: ${contact.mobile}
-		</p>
+        <p class="info-item text-desc footer-phones">
+            <span>Số điện thoại: ${contact.phone}</span>
+            <span class="phone-separator">Di động: ${contact.mobile}</span>
+        </p>
 
-		<p class="info-item text-desc">
-			Số tài khoản:
-			<strong>371301060855</strong>
-			tại Kho bạc Nhà nước tỉnh Thừa Thiên Huế
-		</p>
-	`;
+        <p class="info-item text-desc">
+            Số tài khoản:
+            <strong>371301060855</strong>
+            tại Kho bạc Nhà nước tỉnh Thừa Thiên Huế
+        </p>
+    `;
 }
 
 export async function loadContact() {
