@@ -365,7 +365,7 @@ header {
 	line-height: 1.5;
 	letter-spacing: 0.15px;
 	white-space: nowrap;
-	animation: announcement-scroll 12s linear infinite;
+	animation: announcement-scroll 15s linear infinite;
 }
 
 .announcement-link:hover {
@@ -1544,11 +1544,15 @@ footer {
 		flex: 0 0 100%;
 		width: 100%;
 	}
+
+	.announcement-link {
+		animation-duration: 30s;
+	}
 }
 
 @media (max-width: 340px) {
 	.announcement-link {
-		animation-duration: 20s;
+		animation-duration: 40s;
 	}
 }
 
