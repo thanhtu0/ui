@@ -228,7 +228,19 @@
 						</div>
 					</main>
 
-					<aside class="sidebar">
+					<aside
+						class="sidebar"
+						id="site-sidebar">
+						<div class="sidebar-drawer-header">
+							<h2 class="text-title">Danh mục tiện ích</h2>
+
+							<button
+								type="button"
+								class="sidebar-close"
+								aria-label="Đóng thanh tiện ích">
+								&times;
+							</button>
+						</div>
 						<div class="sidebar-row-banner-relatives">
 							<div
 								class="widget banner-widget"
@@ -327,6 +339,22 @@
 						</div>
 					</aside>
 				</div>
+				<button
+					type="button"
+					class="sidebar-toggle"
+					aria-label="Mở thanh tiện ích"
+					aria-controls="site-sidebar"
+					aria-expanded="false">
+					<span
+						class="sidebar-toggle-icon"
+						aria-hidden="true">
+						☰
+					</span>
+				</button>
+
+				<div
+					class="sidebar-overlay"
+					aria-hidden="true"></div>
 			</div>
 
 			<footer>

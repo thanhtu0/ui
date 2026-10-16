@@ -71,3 +71,43 @@ scrollTopButton.addEventListener('click', () => {
 });
 
 updateScrollProgress();
+
+const sidebar = document.querySelector('#site-sidebar');
+const sidebarToggle = document.querySelector('.sidebar-toggle');
+const sidebarClose = document.querySelector('.sidebar-close');
+const sidebarOverlay = document.querySelector('.sidebar-overlay');
+
+if (sidebar && sidebarToggle && sidebarClose && sidebarOverlay) {
+	const setSidebarState = (isOpen) => {
+		document.body.classList.toggle('sidebar-open', isOpen);
+
+		sidebarToggle.setAttribute('aria-expanded', String(isOpen));
+		sidebarToggle.setAttribute('aria-label', isOpen ? 'Đóng thanh tiện ích' : 'Mở thanh tiện ích');
+
+		document.body.style.overflow = isOpen ? 'hidden' : '';
+
+		if (isOpen) {
+			sidebarClose.focus();
+		} else {
+			sidebarToggle.focus();
+		}
+	};
+
+	sidebarToggle.addEventListener('click', () => {
+		setSidebarState(true);
+	});
+
+	sidebarClose.addEventListener('click', () => {
+		setSidebarState(false);
+	});
+
+	sidebarOverlay.addEventListener('click', () => {
+		setSidebarState(false);
+	});
+
+	document.addEventListener('keydown', (event) => {
+		if (event.key === 'Escape' && document.body.classList.contains('sidebar-open')) {
+			setSidebarState(false);
+		}
+	});
+}
